@@ -17,6 +17,7 @@
 		<meta name="text:GoogleWebFontURL" content="Gentium+Book+Basic"/>
 	        <meta name='text:Disqus Shortname' content='' />
 	        <meta name='if:ShowNotes' content='1'/>
+		<meta name='if:ShowMediaInfo' content='1'>
 		<meta name="color:Background" content="#fff"/>
 		<meta name="color:Text" content="#444"/>
 		<meta name="color:Link" content="#099"/>
@@ -379,17 +380,21 @@
                 <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" class="singlePhoto">           
 							{LinkCloseTag}
 
-							{block:Caption}
-								{Caption}
-							{/block:Caption}
+							{block:ShowPictureInfo}
+								{block:Caption}
+									{Caption}
+								{/block:Caption}
+							{/block:ShowPictureInfo}
 						{/block:Photo}
 
 						{block:Photoset}
 							{Photoset-500}
 
-							{block:Caption}
-								{Caption}
-							{/block:Caption}
+							{block:ShowMediaInfo}
+								{block:Caption}
+									{Caption}
+								{/block:Caption}
+							{/block:ShowMediaInfo}
 						{/block:Photoset}
 
 						{block:Quote}
@@ -432,17 +437,21 @@
 							
 						  {AudioEmbed-640}
 							
-							{block:Caption}
-								{Caption}
-							{/block:Caption}
+							{block:ShowMediaInfo}
+								{block:Caption}
+									{Caption}
+								{/block:Caption}
+							{/block:ShowMediaInfo}
 						{/block:Audio}
 
 						{block:Video}
 							{Video-700}
 
-							{block:Caption}
-								{Caption}
-							{/block:Caption}
+							{block:ShowMediaInfo}
+								{block:Caption}
+									{Caption}
+								{/block:Caption}
+							{/block:ShowMediaInfo}
 						{/block:Video}
 
 						{block:Answer}
